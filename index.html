@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text Editor</title>
-</head>
-<body>
-    
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="bg-blue-500 max-w-5xl mx-auto mt-14 p-10">
+      <h1 class="text-center text-white text-4xl font-semibold">Text Editor</h1>
+      <div class="border-2 border-gray-700 shadow-xl m-10">
+        <div class="bg-blue-200 p-4">
+          <div
+            class="flex justify-between border-b-2 border-gray-700 mb-4 pb-4"
+          >
+            <div class="space-x-3">
+              <a href=""><i class="fa-solid fa-bold"></i></a>
+              <a href=""><i class="fa-solid fa-italic"></i></a>
+              <a href=""><i class="fa-solid fa-underline"></i></a>
+            </div>
+
+            <div class="space-x-3">
+              <a href=""><i class="fa-solid fa-align-left"></i></a>
+              <a href=""><i class="fa-solid fa-align-center"></i></a>
+              <a href=""><i class="fa-solid fa-align-right"></i></a>
+              <a href=""><i class="fa-solid fa-align-justify"></i></a>
+            </div>
+
+            <div class="flex space-x-3">
+              <input class="w-11 p-1" type="number" />
+              <a class="font-bold text-lg" href="">aA</a>
+              <input type="color" />
+            </div>
+          </div>
+
+          <div>
+            <textarea class="w-full h-72" name="" id=""></textarea>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/363766ac37.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
