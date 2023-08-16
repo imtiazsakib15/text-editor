@@ -15,27 +15,82 @@
             class="flex justify-between border-b-2 border-gray-700 mb-4 pb-4"
           >
             <div class="space-x-3">
-              <a href=""><i class="fa-solid fa-bold"></i></a>
-              <a href=""><i class="fa-solid fa-italic"></i></a>
-              <a href=""><i class="fa-solid fa-underline"></i></a>
+              <span
+                id="text-bold"
+                onclick="textAction('text-bold', 'font-bold')"
+                class="cursor-pointer p-2"
+              >
+                <i class="fa-solid fa-bold"></i>
+              </span>
+              <span
+                id="text-italic"
+                onclick="textAction('text-italic', 'italic')"
+                class="cursor-pointer p-2"
+              >
+                <i class="fa-solid fa-italic"></i>
+              </span>
+              <span
+                id="text-underline"
+                onclick="textAction('text-underline', 'underline')"
+                class="cursor-pointer p-2"
+              >
+                <i class="fa-solid fa-underline"></i>
+              </span>
             </div>
 
             <div class="space-x-3">
-              <a href=""><i class="fa-solid fa-align-left"></i></a>
-              <a href=""><i class="fa-solid fa-align-center"></i></a>
-              <a href=""><i class="fa-solid fa-align-right"></i></a>
-              <a href=""><i class="fa-solid fa-align-justify"></i></a>
+              <span
+                id="text-left"
+                onclick="textAction('text-left', 'text-left')"
+                class="cursor-pointer p-2"
+              >
+                <i class="fa-solid fa-align-left"></i>
+              </span>
+              <span
+                id="text-center"
+                onclick="textAction('text-center', 'text-center')"
+                class="cursor-pointer p-2"
+              >
+                <i class="fa-solid fa-align-center"></i>
+              </span>
+              <span
+                id="text-right"
+                onclick="textAction('text-right', 'text-right')"
+                class="cursor-pointer p-2"
+              >
+                <i class="fa-solid fa-align-right"></i>
+              </span>
+              <span
+                id="text-justify"
+                onclick="textAction('text-justify', 'text-justify')"
+                class="cursor-pointer p-2"
+              >
+                <i class="fa-solid fa-align-justify"></i>
+              </span>
             </div>
 
             <div class="flex space-x-3">
-              <input class="w-11 p-1" type="number" />
-              <a class="font-bold text-lg" href="">aA</a>
-              <input type="color" />
+              <input
+                id="text-size"
+                onchange="textStyle('text-size', 'px')"
+                class="w-11 p-1"
+                type="number"
+              />
+              <span class="font-bold text-lg cursor-pointer">aA</span>
+              <input
+                id="text-color"
+                onblur="textStyle('text-color', '')"
+                type="color"
+              />
             </div>
           </div>
 
           <div>
-            <textarea class="w-full h-72" name="" id=""></textarea>
+            <textarea
+              id="text-field"
+              class="w-full h-80 p-2"
+              name=""
+            ></textarea>
           </div>
         </div>
       </div>
@@ -45,5 +100,6 @@
       src="https://kit.fontawesome.com/363766ac37.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
